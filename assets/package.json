@@ -1,0 +1,28 @@
+{
+  "repository": {},
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "7.14.0",
+    "@babel/preset-env": "7.14.0",
+    "@babel/register": "7.13.16",
+    "autoprefixer": "10.2.5",
+    "babel-loader": "8.2.2",
+    "copy-webpack-plugin": "8.1.1",
+    "css-loader": "5.2.4",
+    "css-minimizer-webpack-plugin": "2.0.0",
+    "mini-css-extract-plugin": "1.5.1",
+    "postcss": "8.2.13",
+    "postcss-import": "14.0.1",
+    "postcss-loader": "5.2.0",
+    "precss": "4.0.0",
+    "tailwindcss": "2.1.2",
+    "webpack": "5.36.1",
+    "webpack-cli": "4.6.0",
+    "webpack-merge": "5.7.3"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production /node_modules/webpack/bin/webpack.js --mode=production --progress",
+    "watch": "/node_modules/webpack/bin/webpack.js --mode=development --progress --watch"
+  }
+}
