@@ -10,6 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - `hello` database migration directory now gets renamed by the rename script
+- Remove leading space in `_init.sql` database migration file
 
 ## [0.1.0] - 2021-05-25
 
