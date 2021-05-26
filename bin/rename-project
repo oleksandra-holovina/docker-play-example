@@ -21,6 +21,7 @@ fi
 
 cat << EOF
 When renaming your project you'll need to re-create a new database.
+
 This can easily be done with Docker, but before this script does it
 please agree that it's ok for this script to delete your current
 project's database(s) by removing any associated Docker volumes.
@@ -51,15 +52,18 @@ find . -type f -exec \
 # -----------------------------------------------------------------------------
 
 cat << EOF
+
 --------------------------------------------------------
 Your project has been renamed successfully!
 --------------------------------------------------------
+
 EOF
 
 function init_git_repo {
   [ -d .git/ ] && rm -rf .git/
 
 cat << EOF
+
 --------------------------------------------------------
 $(git init)
 --------------------------------------------------------
@@ -78,6 +82,7 @@ while true; do
 done
 
 cat << EOF
+
 We're done here. Everything worked!
 
 If you're happy with your new project's name you can delete this
@@ -88,5 +93,6 @@ name later on after developing it for a bit. You can re-run this
 script as many times as you want until you're happy.
 
 Check out the rest of the README on GitHub to wrap things up:
+
 https://github.com/oleksandra-holovina/docker-${FIND_FRAMEWORK}-example#start-and-setup-the-project
 EOF
