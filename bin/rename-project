@@ -48,7 +48,8 @@ done
 find . -type f -exec \
   perl -i \
     -pe "s/(${FIND_APP_NAME}${FIND_FRAMEWORK}|${FIND_APP_NAME})/${APP_NAME}/g;" \
-    -pe "s/${FIND_MODULE_NAME}/${MODULE_NAME}/g;" {} +
+    -pe "s/${FIND_MODULE_NAME}/${MODULE_NAME}/g;" {} + \
+  && mv "conf/db/migration/${FIND_APP_NAME}" "conf/db/migration/${APP_NAME}"
 # -----------------------------------------------------------------------------
 
 cat << EOF
