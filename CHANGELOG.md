@@ -7,7 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+- Update page title to add spaces between `Docker + Play`
 
 ## [0.1.1] - 2021-05-26
 
