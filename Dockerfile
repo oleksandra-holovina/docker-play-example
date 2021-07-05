@@ -40,9 +40,9 @@ LABEL maintainer_nick="Nick Janetakis <nick.janetakis@gmail.com>" \
 WORKDIR /app
 
 RUN apt-get update \
-  && apt-get install -y gnupg --no-install-recommends \
-  && echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list \
-  && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823 \
+  && apt-get install -y gnupg curl --no-install-recommends \
+  && echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list \
+  && curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add \
   && apt-get update \
   && apt-get install -y sbt --no-install-recommends \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
