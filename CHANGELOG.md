@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Move sbt apt repo from https://dl.bintray.com to https://repo.scala-sbt.org
+
 ### Changed
 
 - Update page title to add spaces between `Docker + Play`
