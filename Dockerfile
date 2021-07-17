@@ -96,4 +96,3 @@ EXPOSE 8000
 ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
 CMD ["java", "-cp", "dockerplayexample_web-assets.jar:docker-play-example-deps.jar:docker-play-example.jar", "play.core.server.ProdServerStart"]
-
