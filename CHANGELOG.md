@@ -7,8 +7,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Move sbt apt repo from https://dl.bintray.com to https://repo.scala-sbt.org
-
 ### Changed
 
 - Update page title to add spaces between `Docker + Play`
@@ -16,6 +14,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update Redis to `6.2.4`
 - Update `flyway-play` from `7.9.0` to `7.10.0`
 - Update `postgresql` from `42.2.20` to `42.2.22`
+
+### Fixed
+
+- Move sbt apt repo from https://dl.bintray.com to https://repo.scala-sbt.org
 
 ## [0.1.1] - 2021-05-26
 
