@@ -17,20 +17,24 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `flyway-play` to `7.10.0`
-- Update `postgresql` to `42.2.22`
+- Update `flyway-play` to `7.13.0`
+- Update `postgresql` to `42.2.23`
 
 #### Front-end dependencies
 
-- Update `@babel/preset-env` to `7.14.7`
+- Update `@babel/core` to `7.15.0`
+- Update `@babel/preset-env` to `7.15.0`
+- Update `@babel/register` to `7.15.3`
 - Update `autoprefixer` to `10.3.1`
 - Update `copy-webpack-plugin` to `9.0.1`
-- Update `css-loader` to `6.1.0`
+- Update `css-loader` to `6.2.0`
 - Update `css-minimizer-webpack-plugin` to `3.0.2`
-- Update `mini-css-extract-plugin` to `2.1.0`
+- Update `mini-css-extract-plugin` to `2.2.0`
+- Update `postcss` to `8.3.6`
 - Update `postcss-loader` to `6.1.1`
-- Update `tailwindcss` to `2.2.4`
-- Update `webpack` to `5.45.1`
+- Update `tailwindcss` to `2.2.7`
+- Update `webpack` to `5.51.1`
+- Update `webpacki-cli` to `4.8.0`
 
 ### Fixed
 
