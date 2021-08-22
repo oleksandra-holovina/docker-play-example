@@ -13,7 +13,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Redis` to `6.2.4`
+- Update `Redis` to `6.2.5`
 
 #### Back-end dependencies
 
