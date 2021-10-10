@@ -33,7 +33,7 @@ CMD ["bash"]
 
 ################################################################################
 
-FROM openjdk:11.0.11-slim-buster AS app_assembly
+FROM openjdk:11.0.12-slim-bullseye AS app_assembly
 LABEL maintainer_nick="Nick Janetakis <nick.janetakis@gmail.com>" \
     maintainer_lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
 
@@ -70,7 +70,7 @@ CMD sbt run
 
 ################################################################################
 
-FROM openjdk:11.0.11-jre-slim-buster AS app
+FROM openjdk:11.0.12-jre-slim-bullseye AS app
 LABEL maintainer_nick="Nick Janetakis <nick.janetakis@gmail.com>" \
     maintainer_lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
 

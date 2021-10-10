@@ -13,13 +13,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
+- Update `Scala` to `11.0.12` and switch to Debian Bullseye Slim
 - Update `PostgreSQL` to `14.0`
 - Update `Redis` to `6.2.6`
 
 #### Back-end dependencies
 
-- Update `flyway-play` to `7.13.0`
-- Update `postgresql` to `42.2.23`
+- Update `flyway-play` to `7.14.0`
+- Update `postgresql` to `42.2.24`
 
 #### Front-end dependencies
 
