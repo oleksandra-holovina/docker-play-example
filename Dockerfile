@@ -1,6 +1,6 @@
 FROM node:14.17.5-bullseye-slim AS webpack
-LABEL maintainer_nick="Nick Janetakis <nick.janetakis@gmail.com>" \
-    maintainer_lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
+LABEL maintainer-nick="Nick Janetakis <nick.janetakis@gmail.com>" \
+    maintainer-lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
 
 WORKDIR /app/assets
 
@@ -34,21 +34,21 @@ CMD ["bash"]
 ################################################################################
 
 FROM openjdk:11.0.12-slim-bullseye AS app_assembly
-LABEL maintainer_nick="Nick Janetakis <nick.janetakis@gmail.com>" \
-    maintainer_lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
+LABEL maintainer-nick="Nick Janetakis <nick.janetakis@gmail.com>" \
+    maintainer-lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
 
 WORKDIR /app
 
-RUN apt-get update \
+RUN bash -c "apt-get update \
   && apt-get install -y gnupg curl --no-install-recommends \
-  && echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list \
-  && curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add \
+  && echo 'deb https://repo.scala-sbt.org/scalasbt/debian /' | tee -a /etc/apt/sources.list.d/sbt.list \
+  && curl -sL 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823' | apt-key add \
   && apt-get update \
   && apt-get install -y sbt --no-install-recommends \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
   && useradd --create-home java \
-  && chown java:java -R /app
+  && chown java:java -R /app"
 
 USER java
 
@@ -66,13 +66,13 @@ EXPOSE 8000
 
 ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
-CMD sbt run
+CMD ["sbt", "run"]
 
 ################################################################################
 
 FROM openjdk:11.0.12-jre-slim-bullseye AS app
-LABEL maintainer_nick="Nick Janetakis <nick.janetakis@gmail.com>" \
-    maintainer_lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
+LABEL maintainer-nick="Nick Janetakis <nick.janetakis@gmail.com>" \
+    maintainer-lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
 
 WORKDIR /app
 
