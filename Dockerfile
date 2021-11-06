@@ -1,4 +1,4 @@
-FROM node:14.17.5-bullseye-slim AS webpack
+FROM node:14.18.1-bullseye-slim AS webpack
 LABEL maintainer-nick="Nick Janetakis <nick.janetakis@gmail.com>" \
     maintainer-lexie="Oleksandra Holovina <oleksandra.holovina@gmail.com>"
 
