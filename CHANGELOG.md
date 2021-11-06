@@ -9,6 +9,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
+- Update `OpenJDK` to `11.0.13`
 - Update `Node` to `14.18.1`
 
 ### Added

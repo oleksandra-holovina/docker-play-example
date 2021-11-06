@@ -14,7 +14,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Play 2.8.8 and Java 11.0.12**. The screenshot doesn't get
+**This app is using Play 2.8.8 and Java 11.0.13**. The screenshot doesn't get
 updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/oleksandra-holovina/docker-play-example/blob/main/.github/docs/screenshot.jpg?raw=true)
