@@ -7,10 +7,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
 #### Languages and services
 
 - Update `OpenJDK` to `11.0.13`
 - Update `Node` to `14.18.1`
+
+#### Back-end dependencies
+
+- Update `flyway-play` to `7.15.0`
+- Update `postgresql` to `42.3.1`
 
 ### Added
 

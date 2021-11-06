@@ -28,4 +28,3 @@ lazy val root = (project in file("."))
     ),
     libraryDependencies ++= Seq(ws, specs2 % Test, guice) ++ db ++ cache
   )
-
