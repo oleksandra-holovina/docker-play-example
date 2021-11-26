@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Lint Dockerfile with <https://github.com/hadolint/hadolint>
+
 ### Changed
 
 #### Languages and services
@@ -20,9 +24,21 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `flyway-play` to `7.15.0`
 - Update `postgresql` to `42.3.1`
 
-### Added
+#### Front-end dependencies
 
-- Lint Dockerfile with <https://github.com/hadolint/hadolint>
+- Update `@babel/core` to `7.16.0`
+- Update `@babel/preset-env` to `7.16.4`
+- Update `@babel/register` to `7.16.0`
+- Update `autoprefixer` to `10.4.0`
+- Update `copy-webpack-plugin` to `10.0.0`
+- Update `css-loader` to `6.5.1`
+- Update `css-minimizer-webpack-plugin` to `3.2.0`
+- Update `mini-css-extract-plugin` to `2.4.5`
+- Update `postcss-loader` to `6.2.1`
+- Update `postcss` to `8.4.3`
+- Update `tailwindcss` to `2.2.19`
+- Update `webpack-cli` to `4.9.1`
+- Update `webpack` to `5.64.4`
 
 ## [0.2.0] - 2021-10-10
 
