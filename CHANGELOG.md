@@ -13,6 +13,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `OpenJDK` to `11.0.13`
 - Update `Node` to `14.18.1`
+- Update `PostgreSQL` to `14.1` and switch to Debian Bullseye Slim
 
 #### Back-end dependencies
 
