@@ -13,6 +13,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Update `assets/tailwind.config.js` based on the new TailwindCSS v3 defaults
+
 #### Languages and services
 
 - Update `OpenJDK` to `11.0.13`
