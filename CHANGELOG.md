@@ -21,7 +21,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `flyway-play` to `7.15.0`
+- Update `flyway-play` to `7.17.0`
 - Update `postgresql` to `42.3.1`
 
 #### Front-end dependencies
