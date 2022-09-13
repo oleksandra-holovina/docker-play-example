@@ -394,3 +394,8 @@ There are hundreds of [blog posts](https://nickjanetakis.com/blog/) and a couple
 of [video courses](https://nickjanetakis.com/courses/) on web development and
 deployment topics. He also has a [podcast](https://runninginproduction.com)
 where he talks with folks about running web apps in production.
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
